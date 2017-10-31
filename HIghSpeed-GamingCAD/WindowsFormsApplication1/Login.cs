@@ -42,6 +42,7 @@ namespace WindowsFormsApplication1
 
             User user = new User();
             User userReturned;
+            Debug.WriteLine("Push test");
 
             userReturned = user.Login(UsernameTextBox.Text, PasswordTextBox.Text);
             policeForm = new PoliceForm(userReturned);
